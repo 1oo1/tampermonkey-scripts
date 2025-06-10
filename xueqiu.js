@@ -15,7 +15,6 @@
     'use strict';
 
     document.title = 'INVESTMENT'
-    console.log('hellllll');
 
     const hideStyleStr = 'display: none;';
 
@@ -53,4 +52,10 @@
 
     // remove chat
     document.querySelector('.snbim-mainview-wrap').style = hideStyleStr;
+
+    // remove ad
+    const taichiBubble = document.querySelector('.taichi__bubble');
+    if (taichiBubble) {
+      taichiBubble.style = hideStyleStr;
+    }
 })();
